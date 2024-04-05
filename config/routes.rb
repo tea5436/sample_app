@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get 'lists/:id' => 'lists#show', as: 'list'
   get 'lists/:id/edit' => 'lists#edit', as: 'edit_list'
   patch 'lists/:id/edit' => 'lists#update', as: 'update_list'
+  delete 'lists/:id' => 'lists#destroy', as: 'destroy_list'
   get "up" => "rails/health#show", as: :rails_health_check
 end
